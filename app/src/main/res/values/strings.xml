@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BookYourTrain</string>
+    <string name="register">Register</string>
+    <string name="email">E-Mail</string>
+    <string name="usn">Username</string>
+    <string name="pw">Password</string>
+    <string name="dob">Date of Birth</string>
+    <string name="login">Log In</string>
+    <string name="header_title">Book Your Train!</string>
+    <string name="check">Check my trip</string>
+    <string name="book">Book here!</string>
+    <string name="date">Choose date</string>
+    <string name="departure">Departure</string>
+    <string name="destination">Destination</string>
+    <string name="classs">Class</string>
+    <array name="stations">
+        <item>Jakarta (Pasar Senen)</item>
+        <item>Bandung (Bandung)</item>
+        <item>Surabaya (Pasar Turi)</item>
+        <item>Solo (Solo Balapan)</item>
+        <item>Yogyakarta (Tugu)</item>
+    </array>
+    <array name="classes">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>Executive</item>
+        <item>Luxury</item>
+    </array>
+    <array name="train">
+        <item>Argo Lawu</item>
+        <item>Argo Dwipangga</item>
+        <item>Argo Wilis</item>
+    </array>
+    <string name="paket_satu">Makan</string>
+    <string name="paket_dua">Duduk di pinggir jendela</string>
+    <string name="paket_tiga">Duduk di depan</string>
+    <string name="paket_empat">Selimut dan Bantal</string>
+    <string name="paket_lima">Proteksi tambahan</string>
+    <string name="paket_enam">Bagasi tambahan</string>
+    <string name="paket_tujuh">Antar-jemput ke stasiun</string>
+
+</resources>

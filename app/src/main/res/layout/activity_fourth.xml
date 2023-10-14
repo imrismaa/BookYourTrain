@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthActivity"
+    android:layout_marginHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/book"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/main_green"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:hint="Date"
+        android:textColorHint="#5B697A"
+        android:fontFamily="@font/poppinslight"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_background"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <Spinner
+        android:id="@+id/spinner_departure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/departure"
+        android:textColorHint="#5B697A"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_background"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_txt_date"/>
+
+    <Spinner
+        android:id="@+id/spinner_destination"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/destination"
+        android:textColorHint="#5B697A"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_background"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_departure"/>
+
+    <Spinner
+        android:id="@+id/spinner_train"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/classs"
+        android:textColorHint="#5B697A"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_background"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_destination"/>
+
+    <Spinner
+        android:id="@+id/spinner_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/classs"
+        android:textColorHint="#5B697A"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_background"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_train"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview_paket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinner_class"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_paket_satu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_satu"
+                android:fontFamily="@font/poppinslight"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/main_green"/>
+
+            <Button
+                android:id="@+id/btn_paket_dua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_dua"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_green"/>
+
+            <Button
+                android:id="@+id/btn_paket_tiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_tiga"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_green"/>
+
+            <Button
+                android:id="@+id/btn_paket_empat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_empat"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_green"/>
+
+            <Button
+                android:id="@+id/btn_paket_lima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_lima"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_green"/>
+
+            <Button
+                android:id="@+id/btn_paket_enam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_enam"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_green"/>
+
+            <Button
+                android:id="@+id/btn_paket_tujuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paket_tujuh"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_green"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/choosenPaket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppinslight"
+        app:layout_constraintTop_toBottomOf="@id/scrollview_paket"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price : "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppinslight"
+        app:layout_constraintTop_toBottomOf="@id/choosenPaket"/>
+
+    <Button
+        android:id="@+id/btn_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:backgroundTint="@color/main_green"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

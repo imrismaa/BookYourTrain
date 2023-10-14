@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, user!"
+        android:textStyle="bold"
+        android:textColor="@color/main_green"
+        android:textSize="28dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check your trip here!"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="24sp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_show_calendar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textSize="18sp"
+            android:contentDescription="calendar"
+            android:background="@drawable/baseline_calendar_month_24_green"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/main_green"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout31">
+
+        <TextView
+            android:id="@+id/txt_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/img_train"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/baseline_train_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/baseline_train_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/img_train"/>
+
+            <TextView
+                android:id="@+id/txt_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure\nYogyakarta (Tugu)"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinslight"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination\nJakarta (Pasar Senen)"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinslight"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="end"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinslight"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_departure"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinslight"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/txt_date"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_book_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book new ticket"
+        android:layout_marginBottom="50dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        android:backgroundTint="@color/main_green"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
